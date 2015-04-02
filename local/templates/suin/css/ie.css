@@ -1,0 +1,8 @@
+.css3 {
+	behavior:url(css/css3.htc);
+	position:relative;
+}
+
+.b-video-list__item__buy{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abbe00', endColorstr='#98a800',GradientType=0 );
+}

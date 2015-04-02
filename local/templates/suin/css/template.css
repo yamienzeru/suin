@@ -1,0 +1,359 @@
+﻿@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura-demi-webfont.eot');
+    src: url('../fonts/futura-demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futura-demi-webfont.woff') format('woff'),
+         url('../fonts/futura-demi-webfont.ttf') format('truetype'),
+         url('../fonts/futura-demi-webfont.svg#futurademicdemic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** --- Document params --- ***/
+html,
+body {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #d8d8d8;
+}
+
+/*** --- Default objects --- ***/
+p {
+	margin-bottom: 1em;
+}
+.i-clear {
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+
+/*--- radio btn ----*/
+
+.f-radio{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	padding: 10px 15px 10px 30px;
+}
+
+.f-radio .radio{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.f-radio:hover{
+	background: #fff url('../images/f-radio_hover.png') no-repeat 8px 50%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.f-radio__active,
+.f-radio__active:hover{
+	background-color: #ba006f;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px 15px 10px 30px;
+	margin: 0;
+}
+
+.f-radio__active label{
+	color: #fff;
+}
+
+.f-radio span{
+	height: 100%;
+	width: 100%;
+}
+
+.f-radio span.checked{
+	background: url('../images/f-radio.png') no-repeat 8px 50%;
+	position: absolute;
+}
+
+.f-radio__input{
+	opacity: 0;
+	filter: alpha(opacity=0);
+	display: block;
+	border: none;
+	text-align: center;
+	background: none;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.f-radio__input:hover{
+	cursor: pointer;
+}
+
+/*--- input ----*/
+
+.f-input{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 15px;
+	color: #000;
+	border: 1px solid #e5e5e5;
+	padding: 13px 16px;
+	text-overflow: ellipsis;
+}
+.f-input:focus {
+	border-color: #e4bd71;
+}
+
+/*--- textarea ----*/
+
+.f-textarea{
+	display: inline-block;
+	vertical-align: middle;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #000;
+	border: 1px solid #e5e5e5;
+	padding: 13px 16px;
+}
+
+/*--- select ----*/
+
+.f-select-container{
+	background: #fff url('../images/f-select.png') no-repeat 94% 2px;
+	border: 1px solid #e5e5e5;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 15px;
+	font-size: 15px;
+	color: #000;
+  	position: relative;
+  	overflow: hidden;
+}
+.f-select-container span{
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 15px 16px;
+    cursor: pointer;
+    height: 15px;
+    width: 100%;
+    display: block;
+}
+.f-select-container select{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    border: none;
+    background: none;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+/*--- 3d button ----*/
+
+.f-button{
+	padding: 0 15px 15px 0;
+	text-align: center;
+	position: relative;
+	display: block;
+	text-decoration: none;
+}
+
+.f-button__hide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 500;
+}
+
+.f-button:hover{
+	cursor: default;
+}
+
+.f-button.f-button_hover{
+	cursor: pointer;
+}
+
+.f-button input.f-button__text,
+.f-button button.f-button__text{
+	width: 100%;
+}
+
+.f-button .f-button__text{
+	border: none;
+	background: none;
+	font-family: 'Futura', Arial, Helvetica, sans-serif;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #fdba2f;
+	padding: 20px;
+	z-index: 2;
+	position: relative;
+	display: block;
+	margin: 0;
+}
+
+.f-button_hover .f-button__text{
+	top: 10px;
+	left: 10px;
+	background-color: #fcb012;
+	cursor: pointer;
+}
+
+.f-button__right{
+	position: absolute;
+	right: 0;
+	top: 15px;
+	bottom: 0;
+	width: 15px;
+	background-color: #f69100;
+	z-index: 2;
+}
+
+.f-button_hover .f-button__right{
+	width: 5px;
+}
+
+.f-button__bottom{
+	position: absolute;
+	height: 15px;
+	bottom: 0;
+	left: 15px;
+	right: 0;
+	background-color: #f67a00;
+	z-index: 2;
+}
+
+.f-button_hover .f-button__bottom{
+	height: 5px;
+}
+
+.f-button__right-bottom {
+	background: url('../images/f-button.png') no-repeat 0 -130px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 15px;
+	height: 15px;
+	z-index: 2;
+}
+
+.f-button_hover .f-button__right-bottom{
+	background: url('../images/f-button.png') no-repeat 0 -200px;
+	width: 5px;
+	height: 7px;
+}
+
+.f-button__right-top{
+	background: url('../images/f-button.png') no-repeat 0 -260px;
+	position: absolute;
+	top: -2px;
+	right: 0;
+	width: 15px;
+	height: 17px;
+	z-index: 2;
+}
+
+.f-button_hover .f-button__right-top{
+	background: url('../images/f-button.png') no-repeat 0 -332px;
+	width: 5px;
+	height: 5px;
+	top: 10px;
+}
+
+.f-button__bottom-left{
+	background: url('../images/f-button.png') no-repeat;
+	width: 17px;
+	height: 15px;
+	left: -2px;
+	bottom: 0;
+	position: absolute;
+	z-index: 2;
+}
+
+.f-button_hover .f-button__bottom-left{
+	background: url('../images/f-button.png') no-repeat 0 -70px;
+	width: 5px;
+	height: 5px;
+	left: 10px;
+}
+
+.f-button__shadow{
+	background-color: #000;
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+	position: absolute;
+	top: 30px;
+	bottom: -15px;
+	left: -15px;
+	right: 15px;
+	z-index: 1;
+}
+
+.f-button_hover .f-button__shadow{
+	left: 0px;
+	top: 50px;
+	right: 10px;
+	bottom: -10px;
+}
+
+.f-button_hover .f-button__shadow_top-left{
+	left: -5px;
+	top: 35px;
+}
+
+.f-button__shadow_top-left{
+	background: url('../images/f-button.png') no-repeat 0 -462px;
+	width: 20px;
+	height: 15px;
+	position: absolute;
+	top: 15px;
+	left: -20px;
+}
+
+.f-button__shadow_bottom-right{
+	background: url('../images/f-button.png') no-repeat 0 -392px;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	bottom: -15px;
+	right: 0;
+}
+
+.f-button_hover .f-button__shadow_bottom-right{
+	bottom: -10px;
+	right: 0px;
+	width: 10px;
+}
+
+/*--- form validation ----*/
+
+.b-ketchup{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.b-ketchup input{
+	border: 1px solid #5c195c;
+}
+
+.b-ketchup_hide input{
+	border: 1px solid #e5e5e5;
+}
+

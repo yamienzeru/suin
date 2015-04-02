@@ -1,0 +1,37 @@
+.ketchup-error {
+  position: absolute;
+  width: auto;
+  z-index: 1000;
+  margin-top: 10px;
+}
+
+.ketchup-error ul {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-align: left;
+  color: #fff;
+  background: #5c195c;
+  padding: 10px 13px;
+  -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+  list-style: none;
+  vertical-align: middle;
+
+}
+
+.ketchup-error ul li{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+  line-height: 15px;
+}
+
+.ketchup-error span {
+	background: url('../images/ketchup-error.png') no-repeat;
+	width: 6px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	left: -6px;
+	top: 12px;
+}

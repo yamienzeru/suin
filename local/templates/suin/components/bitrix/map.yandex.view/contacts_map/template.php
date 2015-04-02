@@ -1,0 +1,2 @@
+<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
+		<div class="b-contacts__map js-map" data-x="<?=$arResult["POSITION"]["PLACEMARKS"][0]["LAT"]?>" data-y="<?=$arResult["POSITION"]["PLACEMARKS"][0]["LON"]?>" data-zoom="<?=$arResult["POSITION"]["yandex_scale"]?>" data-image="<?=SITE_TEMPLATE_PATH?>/images/map-point.png"></div>

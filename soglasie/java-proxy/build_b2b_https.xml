@@ -1,0 +1,13 @@
+<project name="webservices-helloclient" default="generate">
+<taskdef name="clientgen"
+      classname="weblogic.wsee.tools.anttasks.ClientGenTask" />
+
+<target name="generate">
+  <delete dir="CCMServiceAPI.jar"/>
+  <clientgen wsdl="https://b2b.soglasie.ru/CCM/CCMPort.wsdl"
+       destFile="CCMServiceAPI.jar"
+       packageName="ru.soglasie.b2b.ccm.client"
+       type="JAXWS"/>
+</target>
+
+</project>

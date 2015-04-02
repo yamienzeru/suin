@@ -1,0 +1,1 @@
+<?$arTemplate = array("NAME"=>"Основной шаблон \"Sure in Sure\"", "DESCRIPTION"=>"");?>
